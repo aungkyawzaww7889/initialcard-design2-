@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+        font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:0;
+    overflow: hidden;
+    
+}
+
+.container{
+    width: 1300px;
+    height: 600px;
+    /* background-color: steelblue; */
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+
+    position: relative;
+}
+
+
+.lefttext{
+    width: 30%;
+    height: 100%;
+    /* background-color: orange; */
+    line-height: 130px;
+    text-transform: uppercase;
+
+    /* text-align: center; */
+    padding-left: 20px;
+
+
+    /* position: relative; */
+}
+
+.lefttext h1{
+    margin: 0;
+    font-size: 90px;
+}
+
+.form-group{
+
+    position:absolute;
+    left:5%;
+    top:70%;
+
+    z-index: 100;
+
+}
+
+.form-group .form-control{
+    width: 400px;
+    background-color: #f5f5f5;
+    color:#ece4e4;
+    border:none;
+    padding: 30px 10px;
+    outline:none;
+    font-size: 20px;
+
+
+
+}
+
+.form-control::placeholder{
+    color: #ddd9d9ee;
+}
+
+.form-group .btn{
+    width: 100px;
+    height: 85px;
+    background-color: greenyellow;
+    font-size: 18px;
+    border:none;
+    color:#999898;
+    cursor: pointer;
+    
+}
+
+.righttext{
+    width: 70%;
+    height: 100%;
+    /* background-color: tomato; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position:absolute;
+    top:0;
+    right:0;
+
+    /* z-index: -1; */
+}
+
+.righttext .panel{
+    height: 77vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    
+    margin:10px;
+    flex: 0.8;
+    cursor: pointer;
+
+    transition: all 1s ease-out;
+}
+
+.panel.active{
+    flex: 5;
+}
